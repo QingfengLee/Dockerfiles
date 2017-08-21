@@ -32,7 +32,7 @@ RUN easy_install supervisor\
 COPY sshd.conf /etc/supervisor/conf.d/sshd.conf
 
 #设置密码
-RUN echo 'root:123@qwe' | chpasswd 
+RUN echo 'root:rootpassword' | chpasswd 
 #暴露22端口
 EXPOSE 22
 #启动
